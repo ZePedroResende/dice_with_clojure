@@ -18,9 +18,7 @@
 
 (defn parsefile
   [filename]
-  (->>
-   (r/map result (str/split-lines(slurp filename)))
-   ))
+   (r/map result (str/split-lines(slurp filename))))
 
 (defn -main [& args]
 (prn (format "args=%s" args))
